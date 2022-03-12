@@ -7,8 +7,12 @@ function setIndex() {
 			, "cmd" : "get"
 		},
         	success : function(rows) {
+			console.log(rows);
 			setIndexTitle();
 			setIndexContents(rows);
+		},
+		error : function (e) {
+		console.log(e);
 		}
 	});
 }

@@ -22,6 +22,7 @@ function setIndexTitle() {
 		.append($('<th/>', { html : '일자' }))
 		.append($('<th/>', { html : '항목' }))
 		.append($('<th/>', { html : '금액' }))
+			   .append($('<th/>', { html : '비고' }))
 	);
 }
 
@@ -31,6 +32,7 @@ function setIndexContents(rows) {
 			.append($('<td/>', { html : row['date'], class : 'index' }))
 			.append($('<td/>', { html : row['item'], class : 'index' }))
 			.append($('<td/>', { html : row['amt'], class : 'index' }))
+				   .append($('<td/>', { html : '', class : 'index' }))
 		);
 	}
 }

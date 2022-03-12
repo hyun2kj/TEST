@@ -1,7 +1,7 @@
 function setIndex() {
 	$.ajax({
 		type: "GET",
-		url : "https://script.google.com/macros/s/AKfycbx3JmJVyNTGJrpNMJ3n8aMz8_0DoC3INL1a57onof42cfmrYm7B4hjcIPIjk_nrI99z/exec",
+		url : "https://script.google.com/macros/s/AKfycbwu_mASh4Vnb8vkK5cFG28Xs7iVYNBS9pbCBlAP9rNx79A0Pfjb9SHevqftOQJQ7Srl/exec",
 		data: {
 			"sheet": "index"
 		},
@@ -14,20 +14,19 @@ function setIndex() {
 
 function setIndexTitle() {
 	$("#index").append($('<tr/>')
-		.append($('<th/>', { html : '종목' }))
-		.append($('<th/>', { html : '지수' }))
-		.append($('<th/>', { html : '비율' }))
-		.append($('<th/>', { html : '변동' }))
+		.append($('<th/>', { html : '일자' }))
+		.append($('<th/>', { html : '항목' }))
+		.append($('<th/>', { html : '금액' }))
 	);
 }
 
 function setIndexContents(rows) {
 	for (var row of rows) {
 		$("#index").append($('<tr/>')
-			.append($('<td/>', { html : row['stock'], class : 'stock' }))
-			.append($('<td/>', { html : row['index'], class : 'index' }))
-			.append($('<td/>', { html : row['rate'], class : getAddClass('rate', row['index'], row['yindex']) }))
-			.append($('<td/>', { html : getCRate(row['index'], row['yindex'], row['crate']), class : getAddClass('crate', row['index'], row['yindex']) }))
+			.append($('<td/>', { html : row['일자'], class : 'stock' }))
+			.append($('<td/>', { html : row['항목'], class : 'index' }))
+			.append($('<td/>', { html : row['금액'], class : getAddClass('rate', row['index'], row['yindex']) }))
+			//.append($('<td/>', { html : getCRate(row['index'], row['yindex'], row['crate']), class : getAddClass('crate', row['index'], row['yindex']) }))
 		);
 	}
 }

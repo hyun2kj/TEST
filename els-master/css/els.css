@@ -1,0 +1,63 @@
+body {
+    padding-top : 70px;
+}
+
+.container {
+    margin-left : 0px;
+    margin-right : 0px;
+}
+
+.clear10 {
+    margin-top : 10px;
+}
+
+.clear20 {
+    margin-top : 20px;
+}
+
+.table {
+    margin-bottom : 0px;
+}
+
+.table-bordered th {
+    text-align : center;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th, 
+.table-bordered > tfoot > tr > th, 
+.table-bordered > thead > tr > td, 
+.table-bordered > tbody > tr > td, 
+.table-bordered > tfoot > tr > td {
+    padding : 6px;
+}
+
+.stock {
+    text-align : center;
+}
+
+.index {
+    text-align : right;
+    font-weight : bold;
+}
+
+.rate {
+    text-align : right;
+    font-weight : bold;
+}
+
+.crate {
+    text-align : right;
+}
+
+.repay {
+    font-weight : bold;
+}
+
+.red {
+    color : red;
+}
+
+.blue {
+    color : blue;
+}

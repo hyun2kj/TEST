@@ -23,10 +23,9 @@ function setIndexTitle() {
 function setIndexContents(rows) {
 	for (var row of rows) {
 		$("#index").append($('<tr/>')
-			.append($('<td/>', { html : row['date'], class : 'stock' }))
+			.append($('<td/>', { html : row['date'], class : 'index' }))
 			.append($('<td/>', { html : row['item'], class : 'index' }))
 			.append($('<td/>', { html : row['amt'], class : 'index' }))
-			//.append($('<td/>', { html : getCRate(row['index'], row['yindex'], row['crate']), class : getAddClass('crate', row['index'], row['yindex']) }))
 		);
 	}
 }

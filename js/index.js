@@ -1,7 +1,7 @@
 function setIndex() {
 	$.ajax({
 		type: "GET",
-		url : "https://script.google.com/macros/s/AKfycbzCpbDpO60xdFwRpD8uFDNRexjH17FLzNL457ACe-B0CuyL_WzkKoroAtttDscSycyh/exec",
+		url : "https://script.google.com/macros/s/AKfycbyMfbyTnhg-SRMMv5dprbXTEL_qFVtFBFz5tpcIzyfCxnDHwpdW69MIYG6qtZosxXPz/exec",
 		data: {
 			"sheet": "index"
 			, "cmd" : "get"

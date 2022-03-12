@@ -4,6 +4,7 @@ function setIndex() {
 		url : "https://script.google.com/macros/s/AKfycbwq5XrfDBrERnd0mL3LzVAHbC5IRr4UlfEanTiWePIF1jjstKdapSEXjEaduQMIClC-/exec",
 		data: {
 			"sheet": "index"
+			, "cmd" : "get"
 		},
         	success : function(rows) {
 			setIndexTitle();

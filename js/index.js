@@ -23,9 +23,9 @@ function setIndexTitle() {
 function setIndexContents(rows) {
 	for (var row of rows) {
 		$("#index").append($('<tr/>')
-			.append($('<td/>', { html : row['일자'], class : 'stock' }))
-			.append($('<td/>', { html : row['항목'], class : 'index' }))
-			.append($('<td/>', { html : row['금액'], class : getAddClass('rate', row['index'], row['yindex']) }))
+			.append($('<td/>', { html : row['date'], class : 'stock' }))
+			.append($('<td/>', { html : row['item'], class : 'index' }))
+			.append($('<td/>', { html : row['amt'], class : 'index' }))
 			//.append($('<td/>', { html : getCRate(row['index'], row['yindex'], row['crate']), class : getAddClass('crate', row['index'], row['yindex']) }))
 		);
 	}
